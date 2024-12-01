@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Site</title>
+    <title>Shopping Site | Sign Up</title>
     <link rel="shortcut icon" href="static/images/icons/site-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -17,14 +17,13 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="login.html">Log in</a>
-            <a href="signup.html">Sign up</a>
             <a href="about.html">About</a>
         </nav>
 
     </header>
     <main>
-        <section id="products">
-            <div class="container">
+        <section id="products"class="blur">
+            <div class="container" >
                 <div class="card">
                     <div class="card-img">
                         <img id="item" src="static/images/smm.jpg" alt="item-image",>
@@ -206,8 +205,56 @@
 
                 </div>
 
-            </div>
+             </div>
 
+        </section>
+        <section id="signup">
+            <div id="sign">
+                <form action=""  method="post" class="signup-form">
+                    <header>
+                        <h2>Create your profile</h2>
+                    </header>
+                    <div id="inputs">
+                        <div class="name">
+                            <label for="first_name" class="hid">First name:</label>
+                            <label for="last_name" class="hid">Last name:</label>
+                        </div>
+                        <div>
+                            <input type="text" id="first_name" placeholder="Enter First Name" required>                           
+                            <input type="text" id="last_name" placeholder="Enter Last name" required>
+                        </div>
+                        <div>
+                            <label for="age" class="hid" >DOB: </label>
+                            <label for="Mobile" class="hid">Contact No:</label>
+                        </div>
+                        <div>
+                            <input type="date" name="" id="age">
+                            <input type="text" id="Mobile"   placeholder="Enter mobile number">
+                            
+                        </div>
+                        <div class="mailid">
+                            <label for="mailid" class="hid" id="m" style=" width: fit-content; align-items: center;"> Email:</label>
+                            <input type="text" id="mailid" placeholder="Enter your mail id" required>
+                        </div>
+                        <div>
+                            <label for="password" class="hid">Password:</label>
+                            <label for="password" class="hid" id="password">Re-enter  password: </label>
+                        </div>
+                        <div class="password">
+                            <input type="password" id="password" placeholder="Enter password" required>
+                            <input type="password" id="password" placeholder="Re-enter your password" required>
+                        </div>
+                    </div>
+                    <div id="end">
+                        <label for="">
+                                <input type="checkbox" id="checkbox">
+                                Remember Me
+                        </label>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            </div>                      
         </section>
 
     </main>

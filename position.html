@@ -21,11 +21,45 @@
             position: fixed;
             width: 100%;
             top: 0;
+            z-index: 10;
             
         }
         main {
-            section#absolute {
+            section.absolute {
                 border: 3px solid black;
+                background-color: aliceblue;
+                height: 250px;
+                margin-top: 40px;
+
+                div.parent {
+                    height: 100%;
+                    position: relative;
+
+                    div.child {
+                        height: 100px;
+                        aspect-ratio: 1/1;
+                        border: 5px solid green;
+                        border-radius: 50%;
+                        position:absolute;
+                        right: 0; 
+                        bottom: 0;   
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    div.cs {
+                        height: 100px;
+                        width: 100px;
+                        border: 5px solid yellow;
+                        background-color: grey;
+                        color: rgb(217, 232, 217);
+                        position: sticky;
+                        top: 50px;
+                        bottom: 50px;
+
+                    }
+                }
 
 
             }
@@ -41,6 +75,7 @@
             width: 100%;
             text-align: center;
             bottom: 0;
+            z-index: 10;
         }
     }
 
@@ -53,19 +88,39 @@
      </header>
 
      <main>
-        <section id="absolute">
+        <section class="absolute">
             <div class="parent">
                 <div class="child">
-                    fjkfdgkfdjgfggdkdfjkg
-                    kkjlkjkljlkj
-                    kkhkjhjhkjkj
-                    kjhkhkjhjhjkh
+                    <p>A</p>
                 </div>
-                
-
+                <div class="cs">
+                    <p>S</p>
+                </div>             
             </div>
 
         </section>
+        <section class="absolute">
+            <div class="sec">
+
+            </div>
+
+
+        </section>
+        <section class="absolute">
+            <div class="sec">
+
+            </div>
+
+
+        </section>
+        <section class="absolute">
+            <div class="sec">
+
+            </div>
+
+
+        </section>
+        
 
      </main>
      <footer id="site-footer">

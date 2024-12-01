@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Site</title>
+    <title>logged in | Shopping Site</title>
     <link rel="shortcut icon" href="static/images/icons/site-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -16,14 +16,14 @@
         <h2>Shopping Site</h2>
         <nav>
             <a href="index.html">Home</a>
-            <a href="login.html">Log in</a>
+            
             <a href="signup.html">Sign up</a>
             <a href="about.html">About</a>
         </nav>
 
     </header>
     <main>
-        <section id="products">
+         <section id="products" class="blur">
             <div class="container">
                 <div class="card">
                     <div class="card-img">
@@ -209,6 +209,31 @@
             </div>
 
         </section>
+        <section id="login">
+            <div>
+                <form action="" method="post" class="login-form">
+                    <div class="header">
+                        <h1>Login</h1>
+                    </div>
+                    <div id="inputs">
+                         <div>
+                             <label for="user name" class="hide">User name : </label>
+                             <input type="text" id="username-input" placeholder="Enter user name" required>
+                        </div>
+                         <div>
+                            <label for="password" class="hide">Password : </label>
+                            <input type="password" placeholder="Enter password" required>
+                        </div>
+                        <div>
+                            <button type="submit">Login </button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        
 
     </main>
     <footer>
